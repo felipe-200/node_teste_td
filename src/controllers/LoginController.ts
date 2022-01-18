@@ -13,11 +13,13 @@ export class LoginController {
         expiresIn: 300
       })
       return response.status(200).json({
+        error: false,
         isAuth: true,
         token
       })
     }
     return response.status(400).json({
+      error: true,
       isAuth: false,
     })
 
