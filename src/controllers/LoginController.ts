@@ -18,7 +18,7 @@ export class LoginController {
         token
       })
     }
-    return response.status(400).json({
+    return response.status(200).json({
       error: true,
       isAuth: false,
     })

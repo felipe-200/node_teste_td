@@ -1,10 +1,7 @@
 import { Router } from 'express'
 import { ClientController } from './controllers/ClientController'
 import { LoginController } from './controllers/LoginController'
-// import { config } from 'dotenv'
-// config()
-// // ou 
-require('dotenv').config()
+
 
 import { JwtService } from './services/JwtService'
 
