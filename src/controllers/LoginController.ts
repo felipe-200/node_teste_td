@@ -14,13 +14,15 @@ export class LoginController {
       })
       return response.status(200).json({
         error: false,
-        isAuth: true,
+        user: {
+          username,
+          password
+        },
         token
       })
     }
     return response.status(200).json({
       error: true,
-      isAuth: false,
     })
 
   }
