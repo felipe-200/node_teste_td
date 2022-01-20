@@ -8,6 +8,6 @@ import { JwtService } from './services/JwtService'
 const routes = Router()
 
 routes.post('/login', new LoginController().handle)
-routes.get('/allClients', new JwtService().verifyToken, new ClientController().handle)
+routes.get('/clients', new JwtService().verifyToken, new ClientController().handle)
 
 export { routes }
